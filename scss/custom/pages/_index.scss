@@ -16,7 +16,7 @@
 .btn-pill-float {
   position: fixed;
   z-index: 1;
-  left: 42%;
+  left: 50%;
   bottom: 3%;
   transform: translateX(-50%);
 }
@@ -183,9 +183,11 @@
       margin-top: 15px;
       width: 87%;
       height: 115px;
+
       @media(max-width: 991px) {
         height: inherit;
       }
+
       @media(max-width: 767px) {
         width: auto;
       }
@@ -197,7 +199,7 @@
   margin-top: 120px;
   background: #fafafa;
   border-top: 1px solid #e2e1e1;
-  border-bottom: 1px solid #e2e1e1;
+  // border-bottom: 1px solid #e2e1e1;
   padding: 70px 0 40px;
 
   header {
@@ -280,6 +282,43 @@
         line-height: 24px;
         color: #666;
         width: 95%;
+      }
+    }
+  }
+}
+
+.afterhours-contact {
+  background: #fafafa;
+  padding: 70px 0 40px;
+
+  header {
+    position: relative;
+
+    h3 {
+      text-align: center;
+      font-size: 26px;
+      font-weight: 400;
+      color: #555;
+
+      @media(max-width: 767px) {
+        font-size: 23px;
+      }
+    }
+    hr {
+      width: 87%;
+    }
+  }
+
+  section {
+    
+    p {
+      color: #666;
+      font-size: 15px;
+      line-height: 25px;
+      margin-top: 30px;
+      a {
+        color: #962D91;
+        text-decoration: underline;
       }
     }
   }

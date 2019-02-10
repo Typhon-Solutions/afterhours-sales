@@ -45,7 +45,7 @@
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a href="#" class="nav-link">
+                        <a href="#contact" class="nav-link scroll">
                             Contact Us
                         </a>
                     </li>
@@ -190,6 +190,65 @@
             </section>
         </div>
     </div>
+
+    <div id="contact" class="afterhours-contact" data-scroll>
+        <div class="container">
+            <header>
+                <h3>Get in Contact</h3>
+                <hr />
+            </header>
+            <section>
+                <div class="row">
+                    <div class="col-md-2 offset-1">
+                        <img class="img img-fluid" src="/images/logos/logo-typhon-solutions.png" />
+                    </div>
+                    <div class="col-md-7">
+                        <p class="text-center">
+                            Afterhours is a product by <a href="/">Typhon Solutions Pty Ltd</a>, a leading Australian
+                            specialist
+                            in
+                            security, building automation and IoT.
+                        </p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 offset-md-5 feature">
+                        <p>Contact us to learn more or make a purchase</p>
+                        <form>
+                                <div class="col-md-4">
+                                    <label for="name">Name</label>
+                                </div>
+                                <div class="col-md-7">
+                                    <input type="text" class="form-control" id="name">
+                                </div>
+                            <div class="form-group">
+                                <label for="email">Email address</label>
+                                <input type="email" class="form-control" id="email">
+                            </div>
+                            <div class="form-group">
+                                <label for="company">Company</label>
+                                <input type="text" class="form-control" id="company">
+                            </div>
+                            <div class="form-group">
+                                <label for="state">State</label>
+                                <select class="form-control" id="state">
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                    <option>5</option>
+                                </select>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <!-- include jQuery and the theme JS file -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="dist/theme.min.js"></script>
     <script type="text/javascript">
         $(function () {
             var trigger = new ScrollTrigger({
@@ -203,9 +262,6 @@
             });
         });
     </script>
-    <!-- include jQuery and the theme JS file -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-    <script src="dist/theme.min.js"></script>
 </body>
 
 </html>
