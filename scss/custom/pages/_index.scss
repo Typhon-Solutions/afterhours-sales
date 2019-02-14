@@ -14,11 +14,12 @@
 }
 
 .btn-pill-float {
+  display: none;
   position: fixed;
   z-index: 1;
-  left: 50%;
+  left: 44%;
   bottom: 3%;
-  transform: translateX(-50%);
+  transform: translate(-50%,0);
 }
 
 .afterhours-hero {
@@ -289,7 +290,7 @@
 
 .afterhours-contact {
   background: #fafafa;
-  padding: 70px 0 40px;
+  padding: 70px 0 80px;
 
   header {
     position: relative;
@@ -315,11 +316,10 @@
       color: #666;
       font-size: 15px;
       line-height: 25px;
-      margin-top: 30px;
-      a {
-        color: #962D91;
-        text-decoration: underline;
-      }
+    }
+    a {
+      color: #962D91;
+      text-decoration: underline;
     }
   }
 }

@@ -401,3 +401,21 @@ window.utils = {
     }
   }
 };
+
+window.onscroll = function () {
+  var height = $(window).height();
+  var scrollTop = $(window).scrollTop();
+  var obj = $("#tour")
+  var obj2 = $("#contact")
+  var pos = obj.position();
+  var pos2 = obj2.position();
+  if (height + scrollTop > pos.top) {
+    $(".btn-pill-float").show();
+  }
+  else {
+    $(".btn-pill-float").hide(); 
+  }
+  if (height + scrollTop > pos2.top) {
+    $(".btn-pill-float").hide(); 
+  }
+}

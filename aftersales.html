@@ -54,6 +54,9 @@
         </div>
     </nav>
 
+    <a href="#" class="bg-faded btn-pill btn-pill-demo btn-pill-float btn-pill-lg" data-animate="fadeInUp" data-animate-delay=".4" data-animate-duration=".5">Request a
+        Demo</a>
+        
     <div class="afterhours-hero">
         <div class="container">
             <div class="row align-items-center h-100">
@@ -73,7 +76,7 @@
                         <a href="#" class="btn-pill btn-pill-demo btn-pill-lg">Request a Demo</a>
                     </div>
                     <div class="actions customFadeInUp d-flex justify-content-center">
-                        <a href="#" class="btn-pill btn-pill-primary btn-pill-lg">Contact Sales</a>
+                        <a href="#contact" class="btn-pill btn-pill-primary btn-pill-lg scroll">Contact Sales</a>
                     </div>
                 </div>
             </div>
@@ -133,8 +136,6 @@
                         <img src="images/icons/spacial-download.png">
                     </div>
                 </div>
-                <a href="#" class="bg-faded btn-pill btn-pill-demo btn-pill-float btn-pill-lg">Request a
-                    Demo</a>
             </div>
         </section>
     </div>
@@ -191,7 +192,7 @@
         </div>
     </div>
 
-    <div id="contact" class="afterhours-contact" data-scroll>
+    <div id="contact" class="afterhours-contact">
         <div class="container">
             <header>
                 <h3>Get in Contact</h3>
@@ -202,8 +203,8 @@
                     <div class="col-md-2 offset-1">
                         <img class="img img-fluid" src="/images/logos/logo-typhon-solutions.png" />
                     </div>
-                    <div class="col-md-7">
-                        <p class="text-center">
+                    <div class="col-md-7 mt-1">
+                        <p class="mt-4">
                             Afterhours is a product by <a href="/">Typhon Solutions Pty Ltd</a>, a leading Australian
                             specialist
                             in
@@ -212,32 +213,51 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-md-6 offset-md-5 feature">
-                        <p>Contact us to learn more or make a purchase</p>
-                        <form>
-                                <div class="col-md-4">
-                                    <label for="name">Name</label>
-                                </div>
-                                <div class="col-md-7">
-                                    <input type="text" class="form-control" id="name">
-                                </div>
-                            <div class="form-group">
-                                <label for="email">Email address</label>
+                    <div class="col-md-6 offset-md-3 feature">
+                        <p>Contact us to learn more or make a purchase.</p>
+                        <form class="row">
+                            <div class="col-md-3 text-right mt-2">
+                                <label for="name" class="mt-1">Name</label>
+                            </div>
+                            <div class="col-md-9 mt-2">
+                                <input type="text" class="form-control" id="name">
+                            </div>
+                            <div class="col-md-3 text-right mt-2">
+                                <label for="email" class="mt-1">Email address</label>
+                            </div>
+                            <div class="col-md-9 mt-2">
                                 <input type="email" class="form-control" id="email">
                             </div>
-                            <div class="form-group">
-                                <label for="company">Company</label>
+                            <div class="col-md-3 text-right mt-2">
+                                <label for="company" class="mt-1">Company</label>
+                            </div>
+                            <div class="col-md-9 mt-2">
                                 <input type="text" class="form-control" id="company">
                             </div>
-                            <div class="form-group">
-                                <label for="state">State</label>
-                                <select class="form-control" id="state">
+                            <div class="col-md-3 text-right mt-2">
+                                <label for="state" class="mt-1">State</label>
+                            </div>
+                            <div class="col-md-9 mt-2">
+                                <select class="form-control" id="state" aria-describedby="state-helper">
                                     <option>1</option>
                                     <option>2</option>
                                     <option>3</option>
                                     <option>4</option>
                                     <option>5</option>
                                 </select>
+                                <small id="state-helper" class="form-text text-muted">
+                                    * This product is currently available in Australia only.
+                                </small>
+                            </div>
+                            <div class="col-md-9 offset-md-3 mt-2">
+                                <div class="custom-control custom-checkbox mt-2">
+                                    <input type="checkbox" class="custom-control-input" id="subscribe">
+                                    <label class="custom-control-label" for="subscribe">Yes I would like to
+                                        subscribe to product updates and receive 2 months free on my first building.</label>
+                                </div>
+                            </div>
+                            <div class="col-md-9 offset-md-3 mt-2 text-center">
+                                <button type="button" class="btn-pill btn-pill-primary btn-pill-lg mt-3">SUBMIT</button>
                             </div>
                         </form>
                     </div>
